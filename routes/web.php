@@ -13,11 +13,6 @@
 
 Dusterio\LumenPassport\LumenPassport::routes($router);
 
-$router->get('/', function () use ($router) {
-//    return $router->app->version();
-    return view('teste');
-});
-
 $router->group(['prefix' => 'api/v1', 'namespace' => 'Api\V1'], function() use ($router) {
     $router->get('restaurants/by-address', 'RestaurantsController@getByAddress');
     $router->get('restaurants/by-address', 'RestaurantsController@getByCoords');
