@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-app-apache2 lumen/public/
+web: vendor/bin/heroku-app-apache2 public/
