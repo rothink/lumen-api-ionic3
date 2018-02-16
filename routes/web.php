@@ -20,7 +20,7 @@ $router->get('/', function () use ($router) {
 
 $router->group(['prefix' => 'api/v1', 'namespace' => 'Api\V1'], function() use ($router) {
     $router->get('restaurants/by-address', 'RestaurantsController@getByAddress');
-    $router->get('restaurants/by-address', 'RestaurantsController@getByCoords');
+    $router->get('restaurants/by-coords', 'RestaurantsController@getByCoords');
     $router->post('restaurants/vote', 'VoteController@store');
     $router->get('restaurants/{id:[0-9]+}/view-phone', 'RestaurantsController@viewPhone');
 
